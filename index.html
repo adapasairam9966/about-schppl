@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sri School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Sri School</h1>
+    </header>
+
+    <section class="about">
+        <div class="content">
+            <h2>About Our School</h2>
+            <p>Sri School is committed to excellence in education, fostering a nurturing environment for students to grow academically and personally.</p>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2022/11/07/14/11/old-school-building-7576490_1280.jpg" alt="School Building"></div>
+                <div class="swiper-slide"><img src="https://cdn8.dissolve.com/p/D430_35_422/D430_35_422_1200.jpg"></div>
+                <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2021/11/10/13/57/children-6784034_1280.jpg" alt="Playground"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            autoplay: { delay: 3000 },
+        });
+    </script>
+
+</body>
+</html>
